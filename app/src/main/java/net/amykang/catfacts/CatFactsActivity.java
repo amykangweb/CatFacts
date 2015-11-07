@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class CatFactsActivity extends Activity {
@@ -39,5 +40,8 @@ public class CatFactsActivity extends Activity {
             }
         };
         showFactButton.setOnClickListener(listener);
+
+        String message = "Yay! Our Activity was created!";
+        Toast welcomeToast = Toast.makeText(this, message, Toast.LENGTH_LONG);
     }
 }
