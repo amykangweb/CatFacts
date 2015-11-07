@@ -41,7 +41,6 @@ public class CatFactsActivity extends Activity {
         };
         showFactButton.setOnClickListener(listener);
 
-        String message = "Yay! Our Activity was created!";
-        Toast welcomeToast = Toast.makeText(this, message, Toast.LENGTH_LONG);
+        Toast.makeText(this, "Yay! Our Activity was created!", Toast.LENGTH_LONG).show();
     }
 }
